@@ -12,7 +12,7 @@ Minim minim;
 AudioPlayer player ;
 
 void setup() {
-  //for aninado para controlar los movers y variar la posicion el tamano de los objetos
+  //for anidado para controlar los movers y variar la posicion el tamano de los objetos
   for ( int i=0; i< numMovers; i++) {
     movers[i] = new Mover(random(20, 40), i, movers);
   }
