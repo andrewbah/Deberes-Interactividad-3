@@ -1,16 +1,14 @@
 int numMovers = 50;
 Mover[] movers = new Mover[numMovers];
-float impacto = 0.09;
+float impacto = 0.05;
 //constante gravitacional
 float g = 0.4;
-
 void setup() {
   size(1333, 650);
   for (int i = 0; i < numMovers; i++) {
     movers[i] = new Mover(i, movers);
   }
 }
-
 void draw() {
   background(255);
   for (int i = 0; i < numMovers; i++) {
@@ -26,8 +24,6 @@ void draw() {
     movers[i].colision();
   }
 }
-
-
 void mouseClicked() {
   for ( int i=0; i< numMovers; i++) {
     movers[i] = new Mover(i, movers);
